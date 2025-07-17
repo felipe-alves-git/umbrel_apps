@@ -1,11 +1,18 @@
-manifestVersion: 1
-id: felipe-jellyfin
-name: Jellyfin
-tagline: jellyfin
-icon: https://cdn6.aptoide.com/imgs/f/3/2/f328e5c0db22c5449648402250a72bf0_icon.png?w=128
-category: Entretenimento
-version: "1.0.0"
-port: 4000
-description: >-
-  Jellyfin is a free software media system that puts you in control of managing and streaming your media. It is the volunteer-built, open source alternative to Plex and Emby.
-developer: Umbrel
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+      - JELLYFIN_PublishedServerUrl=http://192.168.16.142
+    volumes:
+      - /home/umbrel/umbrel/home/app-data/jellyfin/library:/config
+      - /home/umbrel/umbrel/home/Midias:/Midias
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    restart: unless-stopped

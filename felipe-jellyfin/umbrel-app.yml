@@ -1,30 +1,11 @@
 manifestVersion: 1
 id: felipe-jellyfin
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
+name: Jellyfin
+tagline: jellyfin
+icon: https://cdn6.aptoide.com/imgs/f/3/2/f328e5c0db22c5449648402250a72bf0_icon.png?w=128
+category: Entretenimento
 version: "1.0.0"
 port: 4000
 description: >-
-  Add your app's description here.
-
-
-  You can also add newlines!
-
+  Jellyfin is a free software media system that puts you in control of managing and streaming your media. It is the volunteer-built, open source alternative to Plex and Emby.
 developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-releaseNotes: >-
-  Add what's new in the latest version of your app here.
-dependencies: []
-path: ""
-defaultUsername: ""
-defaultPassword: ""
