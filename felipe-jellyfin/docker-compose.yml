@@ -6,14 +6,10 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Sao_Paulo
-      - JELLYFIN_PublishedServerUrl=http://192.168.16.25
     volumes:
       - /home/umbrel/umbrel/home/app-data/jellyfin/library:/config
       - /home/umbrel/umbrel/home/Midias:/Midias
       - /home/umbrel/umbrel/home/Cursos:/Cursos
     ports:
       - 8096:8096
-      - 8920:8920 #optional
-      - 7359:7359/udp #optional
-      - 1900:1900/udp #optional
     restart: unless-stopped
