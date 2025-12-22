@@ -10,6 +10,7 @@ services:
     volumes:
       - /home/umbrel/umbrel/home/app-data/jellyfin/library:/config
       - /home/umbrel/umbrel/home/Midias:/Midias
+      - /home/umbrel/umbrel/home/Cursos:/Cursos
     ports:
       - 8096:8096
       - 8920:8920 #optional
