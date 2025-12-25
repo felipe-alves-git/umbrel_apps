@@ -14,6 +14,10 @@ description: >-
 developer: Umbrel
 website: https://umbrel.com
 submitter: Umbrel
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  - Initial release of Jellyfin app for Umbrel.
 dependencies: []
 path: ""
 defaultUsername: ""
