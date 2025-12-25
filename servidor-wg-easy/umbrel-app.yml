@@ -1,3 +1,4 @@
+manifestVersion: 1
 id: servidor-wg-easy
 name: Wireguard Easy
 tagline: VPN server para o seu homeserver
