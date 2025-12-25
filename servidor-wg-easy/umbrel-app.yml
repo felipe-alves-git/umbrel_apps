@@ -6,10 +6,7 @@ icon: https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/
 category: Networking
 version: "latest"
 port: 51821
-
-description: >-
-  WireGuard com interface web simples para gerenciar túneis VPN.
-
+description: WireGuard com interface web simples para gerenciar túneis VPN.
 env:
   WG_HOST:
     type: string
@@ -36,5 +33,4 @@ env:
 
   PASSWORD_HASH:
     type: password
-    description: Hash bcrypt da senha (inclui $$). Gere com:
-      docker run --rm ghcr.io/wg-easy/wg-easy wgpw suaSenha
+    description: Hash bcrypt da senha (inclui $$). Gere com: 'docker run --rm ghcr.io/wg-easy/wg-easy wgpw suaSenha'
