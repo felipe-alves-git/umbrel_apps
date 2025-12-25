@@ -8,4 +8,3 @@ version: "1.0.0"
 port: 8096
 description: >-
   Jellyfin is a free software media system that puts you in control of managing and streaming your media. It is the volunteer-built, open source alternative to Plex and Emby.
-developer: Umbrel
