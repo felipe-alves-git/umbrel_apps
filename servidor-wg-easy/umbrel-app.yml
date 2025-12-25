@@ -1,4 +1,4 @@
-manifestVersion: 1
+manifestVersion: 2
 id: servidor-wg-easy
 name: WireGuard Easy
 tagline: VPN server para o seu homeserver
@@ -18,3 +18,10 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+env:
+  WG_HOST:
+    type: string
+    name: Host público
+    description: Endereço público ou domínio (DuckDNS, Cloudflare, etc)
+    placeholder: vpn.seudominio.duckdns.org
+    required: true
