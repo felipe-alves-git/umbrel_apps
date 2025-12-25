@@ -15,7 +15,7 @@ developer: Umbrel
 website: https://umbrel.com
 submitter: Umbrel
 gallery:
-  - 
+  - https://cdn6.aptoide.com/imgs/f/3/2/f328e5c0db22c5449648402250a72bf0_icon.png?w=128
 releaseNotes: >-
   - Initial release of Jellyfin app for Umbrel.
 dependencies: []
