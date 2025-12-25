@@ -4,8 +4,23 @@ name: Jellyfin
 tagline: Gerenciador de Mídias
 icon: https://cdn6.aptoide.com/imgs/f/3/2/f328e5c0db22c5449648402250a72bf0_icon.png?w=128
 category: Entretenimento
+version: "latest"
 port: 8096
 description: >-
   Jellyfin is a free software media system that puts you in control of managing and streaming your media. 
   
   It is the volunteer-built, open source alternative to Plex and Emby.
+
+developer: Umbrel
+website: https://umbrel.com
+submitter: Umbrel
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  - Initial release of Jellyfin app for Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
