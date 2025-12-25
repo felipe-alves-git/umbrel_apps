@@ -18,30 +18,3 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-env:
-  WG_HOST:
-    type: string
-    name: Host público
-    description: Endereço público ou domínio (ex: DuckDNS)
-    placeholder: seudominio.duckdns.org
-    required: true
-
-  LANG:
-    type: string
-    default: pt
-
-  WG_PORT:
-    type: number
-    default: 51820
-
-  WG_DEFAULT_DNS:
-    type: string
-    default: 1.1.1.1
-
-  UI_TRAFFIC_STATS:
-    type: boolean
-    default: true
-
-  PASSWORD_HASH:
-    type: password
-    description: Hash bcrypt da senha (inclui $$). Gere com: 'docker run --rm ghcr.io/wg-easy/wg-easy wgpw suaSenha'
