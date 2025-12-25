@@ -13,7 +13,7 @@ description: >-
 
 developer: Community
 website: https://github.com/wg-easy/wg-easy
-submitter: Felipe
+submitter: você
 
 gallery:
   - icon.png
@@ -21,23 +21,11 @@ gallery:
 env:
   WG_HOST:
     type: string
-    name: Host público
-    description: Endereço público ou domínio (DuckDNS, Cloudflare etc.)
-    placeholder: vpn.seudominio.duckdns.org
     required: true
 
   PASSWORD_HASH:
     type: password
-    description: Hash bcrypt da senha (gerar com wgpw)
-
-  LANG:
-    type: string
-    default: pt
 
   WG_PORT:
     type: number
     default: 51820
-
-  UI_TRAFFIC_STATS:
-    type: boolean
-    default: true
