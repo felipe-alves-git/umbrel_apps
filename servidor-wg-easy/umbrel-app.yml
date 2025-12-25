@@ -1,27 +1,43 @@
-manifestVersion: 1.5
-id: servidor-wg-easy
+manifestVersion: 1
+
+id: wg-easy
 name: WireGuard Easy
 tagline: VPN server para o seu homeserver
-icon: https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/wg-easy/logo.png
-category: "Networking"
-version: "latest"
+icon: icon.png
+category: Networking
+version: "1.0.0"
 port: 51821
+
 description: >-
   WireGuard com interface web simples para gerenciar túneis VPN.
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
+developer: Community
+website: https://github.com/wg-easy/wg-easy
+submitter: Felipe
+
 gallery:
-  - 
-dependencies: []
-path: ""
-defaultUsername: ""
-defaultPassword: ""
+  - icon.png
+
 env:
   WG_HOST:
     type: string
     name: Host público
-    description: Endereço público ou domínio (DuckDNS, Cloudflare, etc)
+    description: Endereço público ou domínio (DuckDNS, Cloudflare etc.)
     placeholder: vpn.seudominio.duckdns.org
     required: true
+
+  PASSWORD_HASH:
+    type: password
+    description: Hash bcrypt da senha (gerar com wgpw)
+
+  LANG:
+    type: string
+    default: pt
+
+  WG_PORT:
+    type: number
+    default: 51820
+
+  UI_TRAFFIC_STATS:
+    type: boolean
+    default: true
